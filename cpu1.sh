@@ -1,0 +1,1 @@
+grep -E '^flags|^Features' /proc/cpuinfo | cut -d: -f2 | tr '[:upper:]' '[:lower:]' | sort -u
